@@ -331,7 +331,7 @@ Button
     font-size: 16px;
     font-weight: 300;
     border-radius: 0;
-    margin-top: 30px;
+
 }
 .btn:hover {
 	background-color:none;
@@ -891,6 +891,76 @@ input:-ms-input-placeholder {
 	text-decoration: none;
 
 }
-h1{
-  margin-top: 200px;
+/*  sidebar */
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    left:0; /* Added */
+    top:0; /* Added */
+    position: relative;
+    border: 2px solid black;
+}
+.agenda {
+    margin-bottom: 50px;
+}
+#newsletter-container {
+background: #CFCECE;
+padding: 27px 0;
+}
+
+#newsletter-container h3 {
+font-size: 25px;
+line-height: 46px;
+color: #444b4c;
+text-transform: uppercase;
+margin: 0;
+float: left;
+}
+#newsletter-container form {
+padding-bottom: 20px;
+}
+#newsletter-container input[type=text] {
+height: 46px;
+width: 300px;
+vertical-align: top;
+margin-right: 5px;
+border-radius: 4px;
+border: 3px solid white;
+background: #CFCECE;
+line-height: 20px;
+padding: 5px 10px 5px 20px;
+color: #727b7c;
+}
+
+input, select, textarea {
+outline: 0;
+}
+
+#newsletter-container .btn {
+padding: 12px 20px;
+font-size: 17px;
+line-height: 20px;
+}
+
+.btn-custom-3 {
+color: #black;
+background-color: #575a59;
+border-color: black;
+-webkit-box-shadow: inset 0 1px 1px grey;
+box-shadow: inset 0 1px grey;
+}
+
+.btn-custom-3:hover {
+color: grey;
+background-color: rgb(164, 127, 177);
+border-color: #black;
+-webkit-box-shadow: inset 0 1px 1px grey;
+box-shadow: inset 0 1px 1px grey;
+}
+
+
+::selection {
+background-color: #white;
+color: #black;
 }
