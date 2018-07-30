@@ -237,6 +237,7 @@ section .subtitle h5 {
 .parallax-section {
     max-width: 100%;
     color: #ffffff;
+
 }
 section .title-half h2 {
     font-size: 3rem;
@@ -266,14 +267,16 @@ section .subtitle-half h5 {
     background-color: rgba(41, 41, 41, 0.68);
     width: 80%;
     margin: auto;
+
+
 }
-.overlay-img {
+/* .overlay-img {
     background: rgba(0, 0, 0, 0.3);
     width: 100%;
     padding-top: 100px;
     padding-bottom: 100px;
     color: #ffffff;
-}
+} */
 .no-padding {
     padding: 0 !important;
 }
@@ -557,37 +560,12 @@ input:-ms-input-placeholder {
 
 /* Home Section */
 .home{
-	background:#FAD000;
-}
-
-
-.carousel-caption {
-	padding-bottom: 30px;
-	top: 90px;
-}
-.carousel-caption p{
-	font-size:50px;
-	font-family: 'big_johnregular';
-	line-height: 60px;
-	color:#000;
-}
-
-.carousel-caption .btn_bg {
-    background: url(../images/separetor3.png) no-repeat center center;
-    width: 65%;
-    margin: 0 auto;
-    position: relative;
-    display: inline-block;
-    height: 15px;
-    padding-top: 385px;
-}
-.carousel-caption .btn_bg a {
-    position: absolute;
-    left: 33%;
-    top: 136px;
-    background: #fad663;
-    border: 2px solid #000;
-    border-radius: 15px 15px 15px 15px;
+	background: white;
+  clip-path: polygon(0 0, 100% 0%, 100% 65%, 0 29%);
+  width: 100%;
+  height: 45em;
+  position: relative;
+  z-index: 100;
 }
 
 
@@ -666,8 +644,14 @@ input:-ms-input-placeholder {
 /* What i do */
 
 .whatido{
-	background:#fef9fd;
+	background: #AE82CC;
 	padding:80px 0px;
+  clip-path: polygon(0 0, 100% 0%, 100% 75%, 0 55%);
+  height : 85em;
+  margin-top: -35em;
+  position: relative;
+  z-index: 3;
+
 }
 .whatido .head_title h2{}
 
@@ -702,6 +686,7 @@ input:-ms-input-placeholder {
 .myworks{
 	padding:80px 0px;
 	overflow:hidden;
+  height: 10em;
 }
 .main_myworks_content{
 	margin-top:80px;
@@ -734,36 +719,12 @@ input:-ms-input-placeholder {
 
 /* about Section */
 
-.about{
-	overflow:hidden;
-	padding:80px 0px;
-}
-
-.single_about{
-	margin-top: 50px;
-}
-.single_about_img{
-	margin-bottom:30px;
-}
-.single_about h3{
-    font-size: 18px;
-    font-family: 'big_johnregular';
-    line-height: 50px;
-}
-.single_about h3 span{
-	font-size:48px;
-	display:block;
-
-
-}
-.single_about p{
-	font-size:18px;
-}
 
 /* contact section */
 .contact{
     padding: 80px 0px 20px 0px;
-	background:#d2eae3;
+	background: lightgrey;
+  height: 7em;
 }
 
 .contact_socail_bookmark{
@@ -852,6 +813,11 @@ input:-ms-input-placeholder {
 
 .single_copyirgth p{
 	margin-top:10px;
+}
+/* FORM-CONTACT*/
+.container{
+  height: 1em;
+
 }
 
 
