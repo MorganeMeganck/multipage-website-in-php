@@ -10,7 +10,8 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
+         <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
         <!--<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,600,700' rel='stylesheet' type='text/css'>-->
         <link rel="stylesheet" href="assets/css/fonticons.css">
         <link rel="stylesheet" href="assets/fonts/stylesheet.css">
@@ -29,6 +30,10 @@
         <link rel="stylesheet" href="assets/css/responsive.css" />
 
         <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -58,9 +63,9 @@
                                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
                                         <ul class="nav navbar-nav">
-                                            <li><a href="#home">Accueil</a></li>
-                                            <li><a href="#whatido">Fil d'infos</a></li>
-                                            <li><a href="#myworks">Agenda</a></li>
+                                            <li><a href="index.html">Accueil</a></li>
+                                            <li><a href="filinfos.html">Fil d'infos</a></li>
+                                            <li><a href="agenda.html">Agenda</a></li>
                                             <li><a href="#about">Age</a></li>
                                             <li><a href="#contact">Contact</a></li>
 
@@ -80,13 +85,11 @@
 
         <section id="home" class="home">
             <div class="home_overlay">
-                <div class="container">
-                    <div class="row">
+                <div class="container" >
+                    <div class="row" id="headtitles">
+                        <h1 class="title">Intergenerations</h1>
+                        <h4 class="courants">Geré par</h2>
 
-
-						<div class="scrolldown">
-							<a href="#whatido" class="scroll_btn"></a>
-						</div>
 
 
                     </div>
@@ -122,9 +125,54 @@
 
                             <div class ="slide">
                                 <h3>infos</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                </p>
+                                <div id="demo" class="carousel slide" data-ride="carousel">
+
+                                  <!-- Indicators -->
+                                  <ul class="carousel-indicators">
+                                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                                    <li data-target="#demo" data-slide-to="1"></li>
+                                    <li data-target="#demo" data-slide-to="2"></li>
+                                  </ul>
+
+                                  <!-- The slideshow -->
+                                  <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                      <div class="carousel-cont">
+                                        <h4>Info 1</h4>
+                                        <p>
+                                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        </p>
+                                      </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                      <div class="carousel-cont">
+                                        <h4>Info 2</h4>
+                                        <p>
+                                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        </p>
+                                      </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                      <div class="carousel-cont">
+                                        <h4>Info 3</h4>
+                                        <p>
+                                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <!-- Left and right controls -->
+                                  <div class="carousel-arrow">
+                                  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                  </a>
+                                  <a class="carousel-control-next" href="#demo" data-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                  </a>
+                                </div>
+                                </div>
+
                             </div>
                     </div>
                     <div id="sidebar" class="col-md-4 col-sm-6 col-xs-12">
@@ -137,7 +185,7 @@
                                 Participez à des ateliers mensuels entre seniors et jeunes et (re)découvrez la richesse des échanges entre générations.
                                 </br>Activités créatives, ateliers beauté, sorties diverses,...
                                 </p>
-                                <button>Voir plus</button>
+                                <button id="myButton">Voir plus</button>
                             </div>
                         </section>
 
@@ -173,6 +221,7 @@
 </div>
         <section id="contact" class="contact">
             <div class="container">
+                <hr />
                 <div class="row">
                     <div class="main_contact">
 
@@ -299,6 +348,10 @@
 
         <script src="assets/js/plugins.js"></script>
         <script src="assets/js/main.js"></script>
-
+        <script type="text/javascript">
+            document.getElementById("myButton").onclick = function () {
+                location.href = "agenda.html";
+            };
+        </script>
     </body>
 </html>

@@ -37,7 +37,7 @@ jQuery(document).ready(function ($) {
 
 
     /*---------------------------------------------*
-     * Counter 
+     * Counter
      ---------------------------------------------*/
 
     $('.statistic-counter').counterUp({
@@ -78,9 +78,9 @@ jQuery(document).ready(function ($) {
 
     });
 
-    
 
-	
+
+
 	$('.chart').easyPieChart({
 		animate: 2000,
             scaleColor: false,
@@ -93,22 +93,22 @@ jQuery(document).ready(function ($) {
                 $(this.el).find('.percent').text(Math.round(percent));
             }
 	});
-	
+
 
 // main-menu-scroll
 
 	jQuery(window).scroll(function () {
 	  var top = jQuery(document).scrollTop();
-		var height = 300;
+		var height = 20;
 	  //alert(batas);
-	  
+
 	  if (top > height) {
 		jQuery('.navbar-fixed-top').addClass('menu-scroll');
 	  } else {
 	   jQuery('.navbar-fixed-top').removeClass('menu-scroll');
 	  }
-	});	 
-	
+	});
+
 // scroll Up
 
     $(window).scroll(function(){
@@ -121,7 +121,7 @@ jQuery(document).ready(function ($) {
     $('.scrollup').click(function(){
         $("html, body").animate({ scrollTop: 0 }, 1000);
         return false;
-    });	
+    });
 
     //End
 });

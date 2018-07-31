@@ -11,15 +11,44 @@ Author URI: http://bootstrapthemes.co
 
 html,
 body {
-    background-color: #fef9fd;
+    background-color: white;
     font-size: 15px;
-    color: #565656;
+    color: rgb(74, 74, 74);
     width: 100%;
     padding: 0;
     margin-left: 0;
     margin-right: 0;
     font-family: 'open_sansregular';
     font-weight: 300;
+}
+#whatido{
+    background: rgb(228, 175, 38);
+	padding:90px 0px;
+  clip-path: polygon(0 2%, 100% 15%, 100% 97%, 0 84%);
+}
+hr{
+  border-color: black;
+}
+#home{
+  background-image: url(https://www.guidesocial.be/_images/assoc/198x198/145319685314.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  padding-top: 150px;
+}
+.title{
+  color: grey;
+  font-family: 'Poiret One', cursive;
+  font-size: 85px;
+}
+.courants{
+  text-align: right;
+  color: grey;
+  padding-top: 20px;
+  font-family: 'Poiret One', cursive;
+  font-size: 20px;
+}
+#headtitles{
+  justify-content: space-between;
 }
 /*==========================================
 PRE LOADER
@@ -119,7 +148,7 @@ input[type="color"],
     border: 1px solid rgba(0, 0, 0, 0.90);
     font-size: 16px;
     height: 45px;
-	background:rgb(185, 168, 186);
+	background:orange;
 	border-radius: 15px 15px 15px 15px;
 
 }
@@ -147,7 +176,6 @@ h1 {
     font-weight: 300;
 }
 h2 {
-    font-size: 65px;
     line-height: 8rem;
     margin-bottom: .9rem;
     font-family: 'big_johnregular';
@@ -513,7 +541,7 @@ input:-ms-input-placeholder {
     box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
     -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
     background-color: #fff;
-	color:rgb(185, 168, 186);
+	color:white;
 	height: 80px;
 
 }
@@ -534,7 +562,7 @@ input:-ms-input-placeholder {
 }
 
 .menu-scroll.main_menu_bg .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
-	color:rgb(185, 168, 186);
+	color:white;
 	background-color:transparent;
 }
 
@@ -557,7 +585,7 @@ input:-ms-input-placeholder {
 
 /* Home Section */
 .home{
-	background:rgb(185, 168, 186);
+	background:white;
 }
 
 
@@ -711,7 +739,7 @@ input:-ms-input-placeholder {
     position: absolute;
     left: 42%;
     top: -50px;
-    background: rgb(185, 168, 186);
+    background: orange;
     border: 2px solid #000;
     border-radius: 15px 15px 15px 15px;
 }
@@ -747,7 +775,7 @@ input:-ms-input-placeholder {
 /* contact section */
 .contact{
     padding: 80px 0px 20px 0px;
-	background:rgb(217, 217, 216);
+	background:white;
 }
 
 .contact_socail_bookmark{
@@ -800,7 +828,7 @@ input:-ms-input-placeholder {
     position: absolute;
     left: 35%;
     top: -50px;
-    background: rgb(185, 168, 186);
+    background: orange;
     border: 2px solid #000;
     border-radius: 15px 15px 15px 15px;
 }
@@ -831,7 +859,7 @@ input:-ms-input-placeholder {
 	transition:.5s;
 }
 .single_copyirgth ul li a:hover{
-	color:rgb(185, 168, 186);
+	color:orange;
 }
 
 .single_copyirgth p{
@@ -889,7 +917,7 @@ input:-ms-input-placeholder {
     margin-bottom: 50px;
 }
 #newsletter-container {
-background: #CFCECE;
+background: white;
 padding: 27px 0;
 }
 
@@ -914,7 +942,7 @@ border: 3px solid white;
 background: #CFCECE;
 line-height: 20px;
 padding: 5px 10px 5px 20px;
-color: #727b7c;
+color: orange;
 }
 
 input, select, textarea {
@@ -929,7 +957,7 @@ line-height: 20px;
 
 .btn-custom-3 {
 color: #black;
-background-color: #575a59;
+background-color: orange;
 border-color: black;
 -webkit-box-shadow: inset 0 1px 1px grey;
 box-shadow: inset 0 1px grey;
@@ -937,7 +965,7 @@ box-shadow: inset 0 1px grey;
 
 .btn-custom-3:hover {
 color: grey;
-background-color: rgb(164, 127, 177);
+background-color: orange;
 border-color: #black;
 -webkit-box-shadow: inset 0 1px 1px grey;
 box-shadow: inset 0 1px 1px grey;
@@ -949,5 +977,43 @@ background-color: #white;
 color: #black;
 }
 h2{
-  font-size: 60px;
+  font-size: 47px;
+}
+#demo{
+  border: 2px solid black;
+  width: 600px;
+  height: auto;
+  padding: 35px;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: black;
+  margin-left: 10px;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: black;
+  margin-right: 20px;
+}
+
+.carousel-cont{
+  padding: 0 20px;
+}
+
+.navbar-nav{
+  flex-direction: row;
 }
