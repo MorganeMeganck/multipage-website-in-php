@@ -119,7 +119,7 @@ input[type="color"],
     border: 1px solid rgba(0, 0, 0, 0.90);
     font-size: 16px;
     height: 45px;
-	background:#fad663;
+	background:rgb(185, 168, 186);
 	border-radius: 15px 15px 15px 15px;
 
 }
@@ -513,7 +513,7 @@ input:-ms-input-placeholder {
     box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
     -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
     background-color: #fff;
-	color:#ffd600;
+	color:rgb(185, 168, 186);
 	height: 80px;
 
 }
@@ -534,7 +534,7 @@ input:-ms-input-placeholder {
 }
 
 .menu-scroll.main_menu_bg .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
-	color:#ffd600;
+	color:rgb(185, 168, 186);
 	background-color:transparent;
 }
 
@@ -557,7 +557,7 @@ input:-ms-input-placeholder {
 
 /* Home Section */
 .home{
-	background:#FAD000;
+	background:rgb(185, 168, 186);
 }
 
 
@@ -572,23 +572,7 @@ input:-ms-input-placeholder {
 	color:#000;
 }
 
-.carousel-caption .btn_bg {
-    background: url(../images/separetor3.png) no-repeat center center;
-    width: 65%;
-    margin: 0 auto;
-    position: relative;
-    display: inline-block;
-    height: 15px;
-    padding-top: 385px;
-}
-.carousel-caption .btn_bg a {
-    position: absolute;
-    left: 33%;
-    top: 136px;
-    background: #fad663;
-    border: 2px solid #000;
-    border-radius: 15px 15px 15px 15px;
-}
+
 
 
 /* Scroll Down*/
@@ -727,7 +711,7 @@ input:-ms-input-placeholder {
     position: absolute;
     left: 42%;
     top: -50px;
-    background: #fad663;
+    background: rgb(185, 168, 186);
     border: 2px solid #000;
     border-radius: 15px 15px 15px 15px;
 }
@@ -763,7 +747,7 @@ input:-ms-input-placeholder {
 /* contact section */
 .contact{
     padding: 80px 0px 20px 0px;
-	background:#d2eae3;
+	background:rgb(217, 217, 216);
 }
 
 .contact_socail_bookmark{
@@ -816,7 +800,7 @@ input:-ms-input-placeholder {
     position: absolute;
     left: 35%;
     top: -50px;
-    background: #fad663;
+    background: rgb(185, 168, 186);
     border: 2px solid #000;
     border-radius: 15px 15px 15px 15px;
 }
@@ -847,7 +831,7 @@ input:-ms-input-placeholder {
 	transition:.5s;
 }
 .single_copyirgth ul li a:hover{
-	color:#ffd600;
+	color:rgb(185, 168, 186);
 }
 
 .single_copyirgth p{
@@ -963,4 +947,7 @@ box-shadow: inset 0 1px 1px grey;
 ::selection {
 background-color: #white;
 color: #black;
+}
+h2{
+  font-size: 60px;
 }
