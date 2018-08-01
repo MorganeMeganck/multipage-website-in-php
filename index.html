@@ -87,11 +87,8 @@
             <div class="home_overlay">
                 <div class="container" >
                     <div class="row" id="headtitles">
-                        <h1 class="title">Intergenerations</h1>
+                        <h1 class="title col-md-12 col-sm-12 col-xs-12"><span class="titlehighlight">Inter</span>generations</h1>
                         <h4 class="courants">Geré par</h2>
-
-
-
                     </div>
                 </div>
             </div>
@@ -103,7 +100,6 @@
 					<div class="col-md-4 col-sm-6 col-xs-12">
 						<div class="head_title text-center wow fadeInLeft"  data-wow-duration="3s">
 							<h2>Bienvenue </h2>
-							<div class="separator"></div>
 						</div>
 					</div>
 					<div class="col-md-8 col-sm-6 col-xs-12">
@@ -220,34 +216,83 @@
     </div
 </div>
         <section id="contact" class="contact">
-            <div class="container">
-                <hr />
-                <div class="row">
+            <div class="container" >
+                <hr class="hrblack"/>
+                <div class="row" id="contactbox">
                     <div class="main_contact">
 
                         <div class="contact_content">
 
                             <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInLeft"  data-wow-duration="2s">
 								<div class="contact_message">
+
+                                    <div class="head_title text-center">
+                                        <h3>Nous contacter</h2>
+                                        <div class="separator"></div>
+                                    </div>
 									<form action="#" id="formid">
-										<label for="">Name</label>
+                                        <fieldset>
+                                        <legend>Séléctionner votre genre :</legend>
+                                        <div>
+                                            <input type="radio" id="Mr" name="genre" checked />
+                                            <label for="Mr">Mr</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" id="Mme" name="genre" />
+                                            <label for="Mme">Mme</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" id="Mlle" name="genre" />
+                                            <label for="Mlle">Mlle</label>
+                                        </div>
+                                        </fieldset>
+                                    </br>
+										<label for="">Nom</label>
 										<div class="form-group">
-											<input type="text" class="form-control" name="name" placeholder="name" required="">
+											<input type="text" class="form-control" name="nom" placeholder="nom" required="">
+										</div>
+                                        <label for="">Prénom</label>
+										<div class="form-group">
+											<input type="text" class="form-control" name="prenom" placeholder="prenom" required="">
 										</div>
 
 										<label for="">Email</label>
 										<div class="form-group">
 											<input type="email" class="form-control" name="email" placeholder="Email" required="">
 										</div>
-
+                                        <div>
+                                        <label>Objet :</label>
+                                        <select name="choix">
+                                            <option value="choix1">Demande d'informations</option>
+                                            <option value="choix2">Remarques</option>
+                                            <option value="choix3">Autres</option>
+                                        </select>
+                                        </div>
 										<label for="">Message</label>
 										<div class="form-group">
 											<textarea class="form-control" name="message" rows="8" placeholder="Message"></textarea>
 										</div>
-
-										<div class="message_btn text-center">
+                                        <div>
+                                         <label for="image">Image :</label>
+                                         <input type="file"
+                                                id="image" name="image"
+                                                accept="image/png, image/jpeg" />
+                                        </div>
+                                    </br>
+                                        <fieldset>
+                                            <legend>Séléctionner un format de réponse:</legend>
+                                            <div>
+                                                <input type="radio" id="texte" name="format" checked />
+                                                <label for="texte">Texte</label>
+                                            </div>
+                                            <div>
+                                                <input type="radio" id="html" name="format" />
+                                                <label for="html">Html</label>
+                                            </div>
+                                        </fieldset>
+                                    	<div class="message_btn text-center">
 											<div class="btn_bg">
-												<a href="" class="btn">Send</a>
+												<a href="" class="btn">Envoyer</a>
 											</div>
 										</div>
 									</form>
@@ -255,16 +300,7 @@
 							</div>
 
                             <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInRight"  data-wow-duration="2s">
-								<div class="contact_socail_bookmark_area">
-									<div class="head_title text-center">
-										<h3>Nous contacter</h2>
-										<div class="separator"></div>
-									</div>
-
-
 									<div class="contact_socail_bookmark">
-										<a href=""><img src="assets/images/fb.png" alt="" /></a>
-										<a href=""><img src="assets/images/fb.png" alt="" /></a>
 										<a href=""><img src="assets/images/fb.png" alt="" /></a>
 										<a href=""><img src="assets/images/fb.png" alt="" /></a>
 										<a href=""><img src="assets/images/fb.png" alt="" /></a>
@@ -272,8 +308,8 @@
 
 									<div class="contact_adress">
 										<h3>Adresse:</h3>
-										<span>9114 Bridge Street ,</span>
-										<span>Hillsboro, OR 97124</span>
+										<span>Bruxelles</span>
+										<span>Belgique</span>
 									</div>
 
 									<div class="row">
