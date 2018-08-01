@@ -24,7 +24,7 @@ body {
 #whatido{
     background: rgb(228, 175, 38);
 	padding:90px 0px;
-  clip-path: polygon(0 2%, 100% 15%, 100% 97%, 0 84%);
+  clip-path: polygon(0 0, 100% 12%, 100% 100%, 0 90%);
 }
 hr{
   border-color: white;
@@ -44,11 +44,11 @@ hr{
   font-size: 85px;
 }
 .courants{
-  text-align: right;
   color: grey;
   padding-top: 20px;
   font-family: 'Poiret One', cursive;
   font-size: 20px;
+  padding-left: 80%;
 }
 #headtitles{
   justify-content: space-between;
@@ -655,12 +655,6 @@ input:-ms-input-placeholder {
     height: 40px;
     margin-left: 10px;
 }
-.contact_adress{
-	margin-left:10px;
-}
-.single_contact_phone{
-	margin-left:10px;
-}
 
 .contact_message{
 	margin-top:145px;
@@ -692,6 +686,7 @@ input:-ms-input-placeholder {
 .footer_copyright{
 	overflow:hidden;
 	margin-top:110px;
+  color:black;
 }
 
 .single_copyirgth ul{
@@ -881,4 +876,18 @@ h2{
 }
 #contactbox{
   display: block;
+}
+.datacontact{
+  margin-top: 70px;
+}
+.boxagenda{
+  border: 2px solid white;
+  max-width: 500px;
+  margin: auto;
+}
+.agenda-cont{
+  text-align: center;
+}
+#date1{
+  display: none;
 }
