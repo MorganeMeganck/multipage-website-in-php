@@ -21,7 +21,7 @@ Author URI: http://bootstrapthemes.co
    #whatido{
        background: rgb(228, 175, 38);
        padding:90px 0px;
-     clip-path: polygon(0 2%, 100% 15%, 100% 97%, 0 84%);
+       clip-path: polygon(0 2%, 100% 15%, 100% 97%, 0 84%);
    }
    hr{
      border-color: white;
@@ -85,7 +85,7 @@ Author URI: http://bootstrapthemes.co
        -ms-user-select: none;
        user-select: none;
        -webkit-user-drag: none;
-       user-drag: none;
+       -user-drag: none;
    }
    a,
    a:hover,
@@ -589,7 +589,8 @@ Author URI: http://bootstrapthemes.co
        background:#fef9fd;
        padding:80px 0px;
    }
-   .whatido .head_title h2{}
+  
+
    
    .head_title_rigth {
        margin: 40px 0px;
@@ -879,3 +880,14 @@ Author URI: http://bootstrapthemes.co
    #contactbox{
      display: block;
    }
+
+   /*-- FILINFO --*/
+   .fil-info{
+    background: rgb(228, 175, 38);
+    padding:90px 0px;
+    clip-path: polygon(0 2%, 100% 15%, 100% 97%, 0 84%);
+    height: 65em;
+    width: 100%;
+   }
+   
+  
