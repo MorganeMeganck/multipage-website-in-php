@@ -443,6 +443,7 @@ Button
     position: relative;
     border: 2px solid white;
     padding: 20px;
+    margin: auto;
 }
 .agenda {
     margin-bottom: 50px;
@@ -633,15 +634,23 @@ padding: 50px;
     font-size: 3em;
   }
   .courants{
-    color: grey;
-    padding-top: 20px;
-    font-family: 'Poiret One', cursive;
-    font-size: 10px;
-    padding-left: 50%;
+    display: none;
   }
   #contenuprincipal{
     background: rgb(228, 175, 38);
   	padding:90px 0px;
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+  }
+  #home{
+    background-image: url(https://contattafiles.s3.us-west-1.amazonaws.com/tnt14094/lAdX7lwUXMAjJlW/logo4.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    padding-top: 150px;
+    background-size: 25%;
+    padding-bottom: 25px;
+  }
+  .slide{
+    max-width: 300px;
+    margin: auto;
   }
 }
