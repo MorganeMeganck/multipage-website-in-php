@@ -98,3 +98,11 @@ function toggleDocs(event) {
 }
 
 document.addEventListener('click', toggleDocs, true);
+
+// serviceWorker
+
+if('serviceWorker' in navigator) {
+  navigator.serviceWorker
+           .register('/sw.js')
+           .then(function() { console.log("Service Worker Registered"); });
+}

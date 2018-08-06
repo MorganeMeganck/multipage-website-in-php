@@ -48,7 +48,7 @@
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                           <ul class="nav navbar-nav">
-                            <li><a href="index.html">Accueil</a></li>
+                            <li><a href="home.html">Accueil</a></li>
                             <li><a href="agenda.html">Agenda</a></li>
                             <li><a href="formulaire.php">Contact</a></li>
                           </ul>
@@ -203,7 +203,7 @@
            <div class="col-md-6 col-sm-6 col-xs-12">
              <div class="single_copyirgth wow fadeInUp"  data-wow-duration="2s">
                <ul class="navbar-right">
-                 <li class="active"><a href="index.html">Accueil</a></li>
+                 <li class="active"><a href="home.html">Accueil</a></li>
                  <li><a href="agenda.html">Agenda</a></li>
                  <li><a href="formulaire.php">Contact</a></li>
                </ul>
