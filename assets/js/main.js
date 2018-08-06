@@ -3,10 +3,6 @@
 
 jQuery(document).ready(function ($) {
 
-	$(window).load(function () {
-		$(".loaded").fadeOut();
-		$(".preloader").delay(1000).fadeOut("slow");
-	});
     /*---------------------------------------------*
      * Mobile menu
      ---------------------------------------------*/
@@ -37,19 +33,6 @@ jQuery(document).ready(function ($) {
 
 
     /*---------------------------------------------*
-     * Counter
-     ---------------------------------------------*/
-
-    $('.statistic-counter').counterUp({
-        delay: 10,
-        time: 2000
-    });
-
-
-
-
-
-    /*---------------------------------------------*
      * WOW
      ---------------------------------------------*/
 
@@ -57,43 +40,6 @@ jQuery(document).ready(function ($) {
             mobile: false // trigger animations on mobile devices (default is true)
         });
         wow.init();
-
-
-    /* ---------------------------------------------------------------------
-     Carousel
-     ---------------------------------------------------------------------= */
-
-    $('.slider').owlCarousel({
-        responsiveClass: true,
-        autoplay: false,
-        items: 1,
-        loop: true,
-       dots: true,
-	   nav:false,
-	   navText: [
-                    "<i class='lnr lnr-chevron-left'></i>",
-                    "<i class='lnr lnr-chevron-right'></i>"
-                ],
-      autoplayHoverPause: true
-
-    });
-
-
-
-
-	$('.chart').easyPieChart({
-		animate: 2000,
-            scaleColor: false,
-            lineWidth: 10,
-            lineCap: 'square',
-            size: 130,
-            trackColor: false,
-            barColor: '#498af3',
-            onStep: function (from, to, percent) {
-                $(this.el).find('.percent').text(Math.round(percent));
-            }
-	});
-
 
 // main-menu-scroll
 
@@ -125,6 +71,7 @@ jQuery(document).ready(function ($) {
 
     //End
 });
+// cookieConsent
 $(document).ready(function(){
     setTimeout(function () {
         $("#cookieConsent").fadeIn(200);
@@ -133,3 +80,21 @@ $(document).ready(function(){
         $("#cookieConsent").fadeOut(200);
     });
 });
+
+function toggleDocs(event) {
+
+    if (event.target && event.target.className == 'clickable') {
+
+        var next = event.target.nextElementSibling;
+
+
+        if (next.style.display == "none") {
+            next.style.display = "block";
+
+        } else {
+            next.style.display = "none";
+        }
+    }
+}
+
+document.addEventListener('click', toggleDocs, true);

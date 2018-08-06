@@ -23,8 +23,50 @@ $message = $_POST['message'];
 $objet = $_POST['choix'];
 $genre = $_POST['genre'];
 $format = $_POST['format'];
-$image = $_POST['imagesend'];
 $date = date("l jS \of F Y h:i:s A");
+
+// documentenvoyé
+include('vendor/verot/class.upload.php/src/class.upload.php');
+$handle = new upload($_FILES['imagesend']);
+if ($handle->uploaded) {
+  $handle->file_new_name_body   = 'image_resized';
+  // $handle->image_resize         = true;
+  // $handle->image_x              = 100;
+  // $handle->image_ratio_y        = true;
+  $handle->process('downloadimg/');
+  if ($handle->processed) {
+    echo 'image_resized';
+    $handle->clean();
+  } else {
+    echo 'error : ' . $handle->error;
+  }
+}
+// genre
+$genre = $_POST['genre'];
+if(filter_has_var(INPUT_GET, $genre)) {
+    echo '$_GET[\'genre\'] existe';
+}
+// sanitaze
+$email = $_POST['email'];
+$prenom = $_POST['prenom'];
+$nom = $_POST['nom'];
+$message = $_POST['message'];
+
+$options = array(
+    $prenom => FILTER_SANITIZE_STRING, //Enlever les balises.
+    $nom => FILTER_SANITIZE_STRING,
+    $message => FILTER_SANITIZE_STRING,
+    $email => FILTER_SANITIZE_EMAIL, //Valider l'adresse de messagerie.
+    );
+    if (true === filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    echo "Cette adresse email nettoyée est considérée comme valide.";
+} else {
+	echo "Cette adresse email nettoyée n'est pas valide. Désolé. xoxo";
+}
+ $resultat = filter_input_array(INPUT_POST, $options);
+print_r($resultat);
+
+// mailer
 
 date_default_timezone_set('Etc/UTC');
 require 'PHPMailerAutoload.php';
@@ -61,19 +103,21 @@ $mail->addReplyTo('morgane.meganck@gmail.com', 'Morgane Meganck');
 //Set who the message is to be sent to
 $mail->addAddress($email);
 //Set the subject line
+$mail->AddCC($email);
 $mail->Subject = $objet;
 //Read an HTML message body from an external file, convert referenced images to embedded,
 //convert HTML into a basic plain-text alternative body
-$mail->msgHTML("Reçu de " . $genre ." " . $nom ." " . $prenom . " le". $date . "</br>" . "Email:" . $email . "</br>" . " Format de réponse desiré:" . $format . "</br>" . " Message:" . $message);
+$mail->msgHTML("Reçu de " . $genre ." " . $nom ." " . $prenom . "</br>" . " Date: ". $date . "</br>" . " Email: " . $email . "</br>" . " Format de réponse desiré: " . $format . "</br> Message: " . $message . $handle);
 //Replace the plain text body with one created manually
 $mail->AltBody = 'This is a plain-text message body';
 //Attach an image file
 // $mail->addAttachment('images/phpmailer_mini.png');
 //send the message, check for errors
 if (!$mail->send()) {
-    echo "Mailer Error: " . $mail->ErrorInfo;
+    echo "Problème d'envoi " . $mail->ErrorInfo;
 } else {
-    echo "Message envoyé!";
+    echo "<script>alert('Message envoyé !');</script>";
+    echo "<script>document.location.href='formulaire.php'</script>";
     //Section 2: IMAP
     //Uncomment these to save your message in the 'Sent Mail' folder.
     #if (save_mail($mail)) {
@@ -96,48 +140,9 @@ function save_mail($mail) {
 
 }
 
-
 if (!empty($msg)) {
    echo "<h2>$msg</h2>";
  }
  echo $mail->ErrorInfo;
-// documentenvoyé
-include('vendor/verot/class.upload.php/src/class.upload.php');
-$handle = new upload($_FILES['imagesend']);
-if ($handle->uploaded) {
-  $handle->file_new_name_body   = 'image_resized';
-  // $handle->image_resize         = true;
-  // $handle->image_x              = 100;
-  // $handle->image_ratio_y        = true;
-  $handle->process('downloadimg/');
-  if ($handle->processed) {
-    echo 'image_resized';
-    $handle->clean();
-  } else {
-    echo 'error : ' . $handle->error;
-  }
-}
-
-// genre
-$genre = $_POST['genre'];
-if(filter_has_var(INPUT_GET, $genre)) {
-    echo '$_GET[\'genre\'] existe';
-}
-// sanitaze
-$email = $_POST['email'];
-$prenom = $_POST['prenom'];
-$nom = $_POST['nom'];
-$message = $_POST['message'];
-
-$options = array(
-    $prenom => FILTER_SANITIZE_STRING, //Enlever les balises.
-    $nom => FILTER_SANITIZE_STRING,
-    $message => FILTER_SANITIZE_STRING,
-    $email => FILTER_VALIDATE_EMAIL, //Valider l'adresse de messagerie.
-    );
- $resultat = filter_input_array(INPUT_POST, $options);
-print_r($resultat);
-
-
 
  ?>
