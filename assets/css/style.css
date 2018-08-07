@@ -8,26 +8,23 @@ Author URI: http://bootstrapthemes.co
 
    html,
    body {
-       background-color: white;
-       font-size: 15px;
-       color: white;
-       width: 100%;
-       padding: 0;
-       margin-left: 0;
-       margin-right: 0;
-       font-family: 'open_sansregular';
-       font-weight: 300;
+     background-color: white;
+     font-size: 15px;
+     color: white;
+     width: 100%;
+     padding: 0;
+     margin-left: 0;
+     margin-right: 0;
+     font-family: 'open_sansregular';
+     font-weight: 300;
    }
-   #whatido{
-       background: rgb(228, 175, 38);
+   #contenuprincipal{
+     background: rgb(228, 175, 38);
        padding:90px 0px;
-       clip-path: polygon(0 2%, 100% 15%, 100% 97%, 0 84%);
+     clip-path: polygon(0 0, 100% 12%, 100% 100%, 0 90%);
    }
    hr{
      border-color: white;
-   }
-   .hrblack{
-     border-color: black;
    }
    #home{
      background-image: url(https://contattafiles.s3.us-west-1.amazonaws.com/tnt14094/lAdX7lwUXMAjJlW/logo4.png);
@@ -41,68 +38,40 @@ Author URI: http://bootstrapthemes.co
      font-size: 85px;
    }
    .courants{
-     text-align: right;
      color: grey;
      padding-top: 20px;
      font-family: 'Poiret One', cursive;
      font-size: 20px;
+     padding-left: 80%;
    }
+   
    #headtitles{
      justify-content: space-between;
    }
-   /*==========================================
-   PRE LOADER
-   ==========================================*/
-   .preloader {
-       position: fixed;
-       top: 0;
-       left: 0;
-       right: 0;
-       bottom: 0;
-       background-color: #fefefe;
-       z-index: 99999;
-       height: 100%;
-       width: 100%;
-       overflow: hidden !important;
-   }
-   
-   .loaded {
-       width: 60px;
-       height: 60px;
-       position: absolute;
-       left: 50%;
-       top: 50%;
-       background-image: url(../images/loading.gif);
-       background-repeat: no-repeat;
-       background-position: center;
-       -moz-background-size: cover;
-       background-size: cover;
-       margin: -20px 0 0 -20px;
-   }
    img {
-       -moz-user-select: none;
-       -webkit-user-select: none;
-       -ms-user-select: none;
-       user-select: none;
-       -webkit-user-drag: none;
-       -user-drag: none;
+     -moz-user-select: none;
+     -webkit-user-select: none;
+     -ms-user-select: none;
+     user-select: none;
+     -webkit-user-drag: none;
+     user-drag: none;
    }
    a,
    a:hover,
    a:active,
    a:focus {
-       text-decoration: none;
-       outline: none;
+     text-decoration: none;
+     outline: none;
    }
    a,
    button,
    a span {
-       -webkit-transition: 0.2s ease-in-out;
-       -o-transition: 0.2s ease-in-out;
-       transition: 0.2s ease-in-out;
+     -webkit-transition: 0.2s ease-in-out;
+     -o-transition: 0.2s ease-in-out;
+     transition: 0.2s ease-in-out;
    }
    .btn.extra-width {
-       padding: 13px 40px;
+     padding: 13px 40px;
    }
    .btn:focus,
    .btn:active {
@@ -111,20 +80,18 @@ Author URI: http://bootstrapthemes.co
    *,
    *:before,
    *:after {
-       -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-       box-sizing: border-box;
-       /*    direction: rtl;*/
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
    }
    p {
-       margin: 0 0 15px;
+     margin: 0 0 15px;
    }
    .clear {
-       clear: both;
+     clear: both;
    }
-   
    img {
-       max-width: 100%;
+     max-width: 100%;
    }
    textarea,
    input[type="text"],
@@ -142,69 +109,68 @@ Author URI: http://bootstrapthemes.co
    input[type="tel"],
    input[type="color"],
    .uneditable-input {
-       outline: none;
+     outline: none;
    }
    .form-control {
-       border: 1px solid rgba(0, 0, 0, 0.90);
-       font-size: 16px;
-       height: 45px;
-       background:orange;
+     border: 1px solid rgba(0, 0, 0, 0.90);
+     font-size: 16px;
+     height: 45px;
+       background:white;
        border-radius: 15px 15px 15px 15px;
    
    }
    .form-control:focus {
-       border-color: #000000;
+     border-color: #000000;
    }
    
    h1,
    h2,
    h3 {
-       font-family: 'big_johnregular';
-       font-weight: 300;
-       margin: 0;
+     font-family: 'big_johnregular';
+     font-weight: 300;
+     margin: 0;
    }
    h4,
    h5 {
-       /*font-family: 'roboto', sans-serif;*/
-       font-weight: 300;
-       margin: 0;
-       line-height: 2rem;
+     font-weight: 300;
+     margin: 0;
+     line-height: 2rem;
    }
    h1 {
-       font-size: 3rem;
-       line-height: 4rem;
-       font-weight: 300;
+     font-size: 3rem;
+     line-height: 4rem;
+     font-weight: 300;
    }
    h2 {
-       line-height: 8rem;
-       margin-bottom: .9rem;
-       font-family: 'big_johnregular';
+     line-height: 8rem;
+     margin-bottom: .9rem;
+     font-family: 'big_johnregular';
    }
    h3 {
-       font-weight: 300;
-       margin-bottom: .9rem;
-       font-size: 2.1rem;
-       line-height: 2.5rem;
+     font-weight: 300;
+     margin-bottom: .9rem;
+     font-size: 2.1rem;
+     line-height: 2.5rem;
    }
    h4 {
-       font-size: 1.6rem;
-       line-height: 2.2rem;
-       margin-bottom: 1.1rem;
+     font-size: 1.6rem;
+     line-height: 2.2rem;
+     margin-bottom: 1.1rem;
    }
    h5 {
-       font-size: 1.3rem;
-       margin-bottom: 1rem;
+     font-size: 1.3rem;
+     margin-bottom: 1rem;
    }
    h6 {
-       font-size: 1rem;
-       margin-bottom: .9rem;
+     font-size: 1rem;
+     margin-bottom: .9rem;
    }
    p {
-       line-height: 1.5rem;
-       font-size: 1.1rem;
+     line-height: 1.5rem;
+     font-size: 1.1rem;
    }
    p:last-child {
-       margin-bottom: 0px;
+     margin-bottom: 0px;
    }
    /*.home-wrap h1,*/
    .home-wrap h2,
@@ -212,38 +178,11 @@ Author URI: http://bootstrapthemes.co
    .home-wrap h4,
    .home-wrap h5,
    .home-wrap p {
-       color: #ffffff;
-       /*font-family: 'roboto', sans-serif;*/
+     color: #ffffff;
    }
    .text {
-       color: #333333;
+     color: #333333;
    }
-   .colorstext {
-       color: #f56363;
-   }
-   .coloricon i {
-       color: #f56363;
-   }
-   .colorsbg {
-       background: #f56363;
-       color: #ffffff;
-   }
-   
-   .lightbg {
-       background-color: #f9f9f9;
-   }
-   .transition {
-       -webkit-transition: all 300ms linear;
-       -moz-transition: all 300ms linear;
-       -o-transition: all 300ms linear;
-       -ms-transition: all 300ms linear;
-       transition: all 300ms linear;
-   }
-   
-   .outofsectiontext{
-       margin-top: 40px;
-   }
-   
    /*
    Section
    */
@@ -252,7 +191,6 @@ Author URI: http://bootstrapthemes.co
        padding-bottom: 100px;
        position: relative;
        overflow: hidden;
-   
    }
    .sections.footer {
        padding-bottom: 80px;
@@ -276,63 +214,12 @@ Author URI: http://bootstrapthemes.co
        font-weight: 100;
        font-size: 17px;
    }
-   
-   
    .heading {
        margin-bottom: 4rem;
-   }
-   .overlay {
-       background-color: rgba(0, 0, 0, 0.3);
-       width: 100%;
-       min-height: 750px;
-   }
-   .overlay-fluid-block {
-       background-color: rgba(0, 0, 0, 0.5);
-       width: 100%;
-   }
-   .home-overlay-fluid {
-       background-color: rgba(41, 41, 41, 0.68);
-       width: 80%;
-       margin: auto;
-   }
-   .overlay-img {
-       background: rgba(0, 0, 0, 0.3);
-       width: 100%;
-       padding-top: 100px;
-       padding-bottom: 100px;
-       color: #ffffff;
-   }
-   .no-padding {
-       padding: 0 !important;
-   }
-   .fluid-blocks-col {
-       padding: 70px 40px 0 80px;
-   }
-   .fluid-blocks-col-right {
-       padding: 70px 80px 0 40px;
    }
    /*
    Button
    */
-   .btn-primary.active.focus,
-   .btn-primary.active:focus,
-   .btn-primary.active:hover,
-   .btn-primary:active.focus,
-   .btn-primary:active:focus,
-   .btn-primary:active:hover,
-   .open > .dropdown-toggle.btn-primary.focus,
-   .open > .dropdown-toggle.btn-primary:focus,
-   .open > .dropdown-toggle.btn-primary:hover,
-   .btn-primary.focus,
-   .btn-primary:focus,
-   .btn-primary.disabled,
-   .btn-primary.disabled:hover {
-       color: orange;
-       background-color: #f56363;
-       border-color: #f56363;
-   }
-   
-   
    
    .btn {
        border: 1px solid #3c3c3c;
@@ -341,14 +228,13 @@ Author URI: http://bootstrapthemes.co
        padding: .8em;
        height: 50px;
        text-align: center;
-       color: #3c3c3c;
+       color: black;
        font-style: normal;
        letter-spacing: 1px;
        margin: 0;
        font-size: 16px;
        font-weight: 300;
        border-radius: 0;
-   
    }
    .btn:hover {
        background-color:none;
@@ -356,180 +242,18 @@ Author URI: http://bootstrapthemes.co
        text-decoration: none;
    }
    
-   .btn-primary {
-       color: #fff;
-       background-color: #ea6060;
-       border-color: #ea6060;
-       transition: .6s;
-   }
-   
-   .pink-btn {
-       background: #fff;
-       border: 1px solid #222222;
-       margin-left: 10px;
-       color: #222222;
-       transition: .6s;
-   }
-   
-   .pink-btn:hover {
-       background-color: #ea6060;
-       color: #fff;
-       text-decoration: none;
-       border:1px solid #ea6060;
-   }
-   
-   .btn-white{
-       border:1px solid #fff;
-       color:#fff;
-       border-radius:5px;
-   }
-   .btn-white:hover{
-       border:1px solid #000;
-       color:#000;
-   }
-   
-   .btn-md{
-       border:1px solid #fff;
-       color:#fff;
-       width:162px;
-       height:52px;
-       background:#ea6060;
-   }
-   .btn-md:hover{
-       border:1px solid #fff;
-       color:#fff;
-       background:#bfc2c5;
-   }
-   
-   .btn-md2{
-       border:1px solid #222222;
-       color:#222222;
-       width:145px;
-       height:42px;
-       background:#fff;
-       border-radius:4px;
-       padding: .6em;
-   }
-   .btn-md2:hover{
-       border:1px solid #bfc2c5;
-       color:#222222;
-       background:#bfc2c5;
-   }
-   /*.btn-default:active, .btn-default:hover  {
-       background: transparent;
-   }*/
-   
-   
-   /*
-   Extra height css
-   */
-   .margin-top-20 {
-       margin-top: 20px;
-   }
-   .margin-bottom-20 {
-       margin-bottom: 20px;
-   }
-   .margin-top-40 {
-       margin-top: 40px;
-   }
-   .margin-bottom-40 {
-       margin-bottom: 40px;
-   }
-   .margin-top-60 {
-       margin-top: 60px;
-   }
-   .margin-80 {
-       margin-top: 80px;
-       margin-bottom: 80px;
-   }
-   .margin-bottom-60 {
-       margin-bottom: 60px;
-   }
-   .margin-top-80 {
-       margin-top: 80px;
-   }
-   .margin-bottom-80 {
-       margin-bottom: 80px;
-   }
-   .padding-top-20 {
-       padding-top: 1.33rem;
-   }
-   .padding-bottom-20 {
-       padding-bottom: 1.33rem;
-   }
-   .padding-top-40 {
-       padding-top: 2.66rem;
-   }
-   .padding-bottom-40 {
-       padding-bottom: 2.66rem;
-   }
-   .padding-top-60 {
-       padding-top: 5rem;
-   }
-   .padding-bottom-60 {
-       padding-bottom: 5rem;
-   }
-   .padding-bottom-0 {
-       padding-bottom: 0;
-   }
-   /*padding*/
-   .padding-twenty {
-       padding: 10px 0;
-   }
-   .padding-fourty {
-       padding: 20px 0;
-   }
-   .padding-sixty {
-       padding: 30px 0;
-   }
-   .padding-eighty {
-       padding: 40px 0;
-   }
-   h1 span {
-       color: #f56363;
-       font-weight: 400;
-   }
-   
-   /*for placeholder changes*/
-   
-   /*input::-webkit-input-placeholder {
-     color: #CACACA;
-     font-size: 18px;
-   }
-   input::-moz-placeholder {
-     color: #CACACA;
-     font-size: 18px;
-   }
-   input:-ms-input-placeholder {
-     color: #CACACA;
-     font-size: 18px;
-   }*/
-   
-   /*for image bg*/
-   
-   
-   /*.img-bg{
-     background: url(../images/home-msg.jpg) no-repeat center top fixed;
-     background-size
-     -moz-background-size: cover;
-     -webkit-background-size: cover;
-     -o-background-size: cover;
-     background-size: cover;
-     width: 100%;
-     overflow: hidden;
-   }*/
    /* navbar section */
    .menu-scroll {
-       padding-top: 0px;
-       padding-bottom: 0px;
-       position: fixed;
-       top: 0;
+     padding-top: 0px;
+     padding-bottom: 0px;
+     position: fixed;
+     top: 0;
        left: 0;
        right: 0;
        z-index: 300;
-       box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
-       -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
-       background-color: #fff;
+     box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+     -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+     background-color: #fff;
        color:white;
        height: 80px;
    
@@ -539,8 +263,8 @@ Author URI: http://bootstrapthemes.co
        margin-top:0px;
    }
    .main_menu_bg .navbar-default {
-       background-color: transparent;
-       border-color: transparent;
+     background-color: transparent;
+     border-color: transparent;
        transition:.6s;
        margin-top: 16px;
    }
@@ -556,42 +280,33 @@ Author URI: http://bootstrapthemes.co
    }
    
    .main_menu_bg .navbar {
-       margin-bottom:0px;
+     margin-bottom:0px;
    }
    
    
    .main_menu_bg .navbar-nav>li>a {
-       padding-top: 10px;
-       padding-bottom: 10px;
-       line-height: 20px;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     line-height: 20px;
        border-radius:10px;
        font-family: 'big_johnregular';
        text-transform:uppercase;
        font-size:18px;
    }
-   
-   
-   
    /* Home Section */
    .home{
        background:white;
    }
-   
    /* head title */
    .head_title{
-       overflow:hidden;
+     overflow:hidden;
    }
-   
-   
-   /* What i do */
-   
-   .whatido{
+   /* conteny principal */
+   .contenuprincipal{
        background:#fef9fd;
        padding:80px 0px;
    }
-  
-
-   
+   .contenuprincipal .head_title h2{}
    .head_title_rigth {
        margin: 40px 0px;
    }
@@ -600,32 +315,10 @@ Author URI: http://bootstrapthemes.co
        font-family: 'open_sanslight';
        color:white;
    }
-   
-   .single_whatido{
-       margin-top: 50px;
-   }
-   .single_whatido_img{
-       margin-bottom:30px;
-   }
-   .single_whatido_img img{
-       width:130px;
-       height:100px;
-   }
-   .single_whatido h3{
-       font-size:18px;
-       font-family: 'big_johnregular';
-   }
-   .single_whatido p{
-       font-size:18px;
-   }
-   
-   
-   
    /* contact section */
    .contact{
-       padding: 80px 0px 20px 0px;
-       background:white;
-     color: black;
+     padding: 0px 0px 20px 0px;
+     color: white;
      display: block;
      width: 100%;
    }
@@ -653,12 +346,6 @@ Author URI: http://bootstrapthemes.co
        height: 40px;
        margin-left: 10px;
    }
-   .contact_adress{
-       margin-left:10px;
-   }
-   .single_contact_phone{
-       margin-left:10px;
-   }
    
    .contact_message{
        margin-top:145px;
@@ -676,20 +363,20 @@ Author URI: http://bootstrapthemes.co
        height: 15px;
        margin-top: 60px;
    }
-   .contact .btn_bg a{
+   #buttonsend{
        position: absolute;
        left: 35%;
        top: -50px;
-       background: orange;
+       background: white;
        border: 2px solid #000;
        border-radius: 15px 15px 15px 15px;
    }
-   
-   
-   
+   /* footer */
    .footer_copyright{
        overflow:hidden;
        margin-top:110px;
+     color:black;
+     padding-bottom: 70px;
    }
    
    .single_copyirgth ul{
@@ -711,14 +398,12 @@ Author URI: http://bootstrapthemes.co
        transition:.5s;
    }
    .single_copyirgth ul li a:hover{
-       color:orange;
+       color:white;
    }
    
    .single_copyirgth p{
        margin-top:10px;
    }
-   
-   
    /* scrollup */
    
    .scrollup{
@@ -765,6 +450,7 @@ Author URI: http://bootstrapthemes.co
        position: relative;
        border: 2px solid white;
        padding: 20px;
+       margin: auto;
    }
    .agenda {
        margin-bottom: 50px;
@@ -800,8 +486,9 @@ Author URI: http://bootstrapthemes.co
    
    input, select, textarea {
    outline: 0;
+   color: black;
    }
-   
+   /* newsletter */
    #newsletter-container .btn {
    padding: 12px 20px;
    font-size: 17px;
@@ -824,7 +511,7 @@ Author URI: http://bootstrapthemes.co
    box-shadow: inset 0 1px 1px grey;
    }
    
-   
+   /* carousel */
    ::selection {
    background-color: white;
    color: black;
@@ -867,7 +554,7 @@ Author URI: http://bootstrapthemes.co
    .carousel-cont{
      padding: 0 20px;
    }
-   
+   /* a trier */
    .navbar-nav{
      flex-direction: row;
    }
@@ -880,14 +567,98 @@ Author URI: http://bootstrapthemes.co
    #contactbox{
      display: block;
    }
-
-   /*-- FILINFO --*/
-   .fil-info{
-    background: rgb(228, 175, 38);
-    padding:90px 0px;
-    clip-path: polygon(0 2%, 100% 15%, 100% 97%, 0 84%);
-    height: 65em;
-    width: 100%;
+   .datacontact{
+     margin-top: 70px;
+   }
+   .boxagenda{
+     border: 2px solid white;
+     max-width: 500px;
+     margin: auto;
+   }
+   .agenda-cont{
+   padding: 50px;
+   }
+   #date1{
+     display: none;
+   }
+   /*Cookie Consent Begin*/
+   #cookieConsent {
+       background-color: rgba(20,20,20,0.8);
+       min-height: 26px;
+       font-size: 14px;
+       color: #ccc;
+       line-height: 26px;
+       padding: 8px 0 8px 30px;
+       font-family: "Trebuchet MS",Helvetica,sans-serif;
+       position: fixed;
+       bottom: 0;
+       left: 0;
+       right: 0;
+       display: none;
+       z-index: 9999;
+   }
+   #cookieConsent a {
+       color: #4B8EE7;
+       text-decoration: none;
+   }
+   #closeCookieConsent {
+       float: right;
+       display: inline-block;
+       cursor: pointer;
+       height: 20px;
+       width: 20px;
+       margin: -15px 0 0 0;
+       font-weight: bold;
+   }
+   #closeCookieConsent:hover {
+       color: #FFF;
+   }
+   #cookieConsent a.cookieConsentOK {
+       background-color: #F1D600;
+       color: #000;
+       display: inline-block;
+       border-radius: 5px;
+       padding: 0 20px;
+       cursor: pointer;
+       float: right;
+       margin: 0 60px 0 10px;
+   }
+   #cookieConsent a.cookieConsentOK:hover {
+       background-color: #E0C91F;
+   }
+   /*Cookie Consent End*/
+   .clickable{
+     color:black;
+     background: white;
+     border: 1px solid white;
+     border-radius: 15px 15px 15px 15px;
+   }
+   /* media queries */
+   @media screen and (max-width: 600px) {
+     .title{
+       color: grey;
+       font-family: 'Poiret One', cursive;
+       font-size: 3em;
+     }
+     .courants{
+       display: none;
+     }
+     #contenuprincipal{
+       background: rgb(228, 175, 38);
+         padding:90px 0px;
+       clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+     }
+     #home{
+       background-image: url(https://contattafiles.s3.us-west-1.amazonaws.com/tnt14094/lAdX7lwUXMAjJlW/logo4.png);
+       background-position: right;
+       background-repeat: no-repeat;
+       padding-top: 150px;
+       background-size: 25%;
+       padding-bottom: 25px;
+     }
+     .slide{
+       max-width: 300px;
+       margin: auto;
+     }
    }
    
-  

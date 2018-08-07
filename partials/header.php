@@ -57,28 +57,20 @@
                                             <span class="icon-bar"></span>
                                             <span class="icon-bar"></span>
                                         </button>
-
                                     </div>
-
                                     <!-- Collect the nav links, forms, and other content for toggling -->
                                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
                                         <ul class="nav navbar-nav">
-                                            <li><a href="index.php">Accueil</a></li>
-                                            <li><a href="filinfos.php">Fil d'infos</a></li>
-                                            <li><a href="agenda.html">Agenda</a></li>
-                                            <li><a href="#about">Age</a></li>
-                                            <li><a href="#contact">Contact</a></li>
-
+                                            <li><a href="home.html" name="home">Accueil</a></li>
+                                            <li><a href="agenda.html" name="agenda">Agenda</a></li>
+                                            <li><a href="formulaire.php" name="contact">Contact</a></li>
                                         </ul>
                                     </div>
                                 </div>
                             </nav>
                         </div>
                     </div>
-
                 </div>
-
             </div>
         </header> <!--End of header -->
         <section id="home" class="home">
