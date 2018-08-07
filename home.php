@@ -8,7 +8,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Intergenerations</title>
-        <meta name="description" content="">
+        <meta name="description" content="site intergenerations">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
@@ -52,9 +52,9 @@
                                     <!-- Collect the nav links, forms, and other content for toggling -->
                                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                         <ul class="nav navbar-nav">
-                                            <li><a href="home.html">Accueil</a></li>
-                                            <li><a href="agenda.html">Agenda</a></li>
-                                            <li><a href="formulaire.php">Contact</a></li>
+                                            <li><a href="home.html" name="home">Accueil</a></li>
+                                            <li><a href="agenda.html" name="agenda">Agenda</a></li>
+                                            <li><a href="formulaire.php" name="contact">Contact</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -191,11 +191,12 @@
                 </div>
             </div
         </div>
+        <!--  Footer-->
         <div class="row">
           <div class="footer_copyright">
             <div id="cookieConsent">
                 <div id="closeCookieConsent">x</div>
-                This website is using cookies. <a href="#" target="_blank">More info</a>. <a class="cookieConsentOK">That's Fine</a>
+                This website is using cookies. <a href="#" target="_blank" name="cookie">More info</a>. <a class="cookieConsentOK">That's Fine</a>
             </div>
             <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInDown"  data-wow-duration="3s">
               <div class="single_copyirgth text-left">
@@ -205,9 +206,9 @@
             <div class="col-md-6 col-sm-6 col-xs-12">
               <div class="single_copyirgth wow fadeInUp"  data-wow-duration="2s">
                 <ul class="navbar-right">
-                  <li class="active"><a href="home.html">Accueil</a></li>
-                  <li><a href="agenda.html">Agenda</a></li>
-                  <li><a href="formulaire.php">Contact</a></li>
+                  <li class="active"><a href="home.html" name="home">Accueil</a></li>
+                  <li><a href="agenda.html" name="aagenda">Agenda</a></li>
+                  <li><a href="formulaire.php" name="contact">Contact</a></li>
                 </ul>
               </div>
              </div>

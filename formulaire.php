@@ -99,29 +99,29 @@
                                 </div>
                             </fieldset>
                             </br>
-                            <label for="">Nom</label>
+                            <label for="nom">Nom</label>
                             <div class="form-group">
-                              <input type="text" class="form-control" name="nom" placeholder="nom" required="">
+                              <input id="nom" type="text" class="form-control" name="nom" placeholder="Nom" required="">
                             </div>
-                            <label for="">Prénom</label>
+                            <label for="prenom">Prénom</label>
                             <div class="form-group">
-                              <input type="text" class="form-control" name="prenom" placeholder="prenom" required="">
+                              <input id="prenom"type="text" class="form-control" name="prenom" placeholder="Prénom" required="">
                             </div>
-                            <label for="">Email</label>
+                            <label for="email">Email</label>
                             <div class="form-group">
-                              <input type="email" class="form-control" name="email" placeholder="Email" required="">
+                              <input id="email" type="email" class="form-control" name="email" placeholder="Email" required="">
                             </div>
                             <div>
-                              <label>Objet :</label>
-                              <select name="choix">
+                              <label for="objet">Objet :</label>
+                              <select id="objet" name="choix">
                                 <option value="Demande d'informations">Demande d'informations</option>
                                 <option value="Remarques">Remarques</option>
                                 <option value="Autres">Autres</option>
                               </select>
                             </div>
-                            <label for="">Message</label>
+                            <label for="message">Message</label>
                             <div class="form-group">
-                              <textarea class="form-control" name="message" rows="8" placeholder="Message" required></textarea>
+                              <textarea id="message" class="form-control" name="message" rows="8" placeholder="Message" required></textarea>
                             </div>
                             <div>
                               <label for="image">Image :</label>
@@ -158,9 +158,7 @@
                       </div>
                       <div class=" datacontact col-md-6 col-sm-6 col-xs-12 wow fadeInRight"  data-wow-duration="2s">
                         <div class="contact_socail_bookmark">
-                          <a href=""><img src="assets/images/fb.png" alt="" /></a>
-                          <a href=""><img src="assets/images/fb.png" alt="" /></a>
-                          <a href=""><img src="assets/images/fb.png" alt="" /></a>
+                          <a href="facebook.com" name="fb"><img src="assets/images/fb.png" alt="fb" /></a>
                         </div>
                         <div class="contact_adress">
                           <h3>Adresse:</h3>
@@ -203,9 +201,9 @@
            <div class="col-md-6 col-sm-6 col-xs-12">
              <div class="single_copyirgth wow fadeInUp"  data-wow-duration="2s">
                <ul class="navbar-right">
-                 <li class="active"><a href="home.html">Accueil</a></li>
-                 <li><a href="agenda.html">Agenda</a></li>
-                 <li><a href="formulaire.php">Contact</a></li>
+                 <li class="active"><a href="home.html" name="home">Accueil</a></li>
+                 <li><a href="agenda.html" name="agenda">Agenda</a></li>
+                 <li><a href="formulaire.php" name="formulaire">Contact</a></li>
                </ul>
              </div>
            </div>
@@ -213,7 +211,7 @@
        </div>
   <!-- STRAT SCROLL TO TOP -->
       <div class="scrollup">
-        <a href="#"><i class="fa fa-chevron-up"></i></a>
+        <a id="chevron" href="#" name="chevron"><i class="fa fa-chevron-up"></i></a>
       </div>
       <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
       <script src="assets/js/vendor/bootstrap.min.js"></script>
