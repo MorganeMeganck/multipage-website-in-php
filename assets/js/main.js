@@ -3,10 +3,6 @@
 
 jQuery(document).ready(function ($) {
 
-	$(window).load(function () {
-		$(".loaded").fadeOut();
-		$(".preloader").delay(1000).fadeOut("slow");
-	});
     /*---------------------------------------------*
      * Mobile menu
      ---------------------------------------------*/
@@ -37,19 +33,6 @@ jQuery(document).ready(function ($) {
 
 
     /*---------------------------------------------*
-     * Counter 
-     ---------------------------------------------*/
-
-    $('.statistic-counter').counterUp({
-        delay: 10,
-        time: 2000
-    });
-
-
-
-
-
-    /*---------------------------------------------*
      * WOW
      ---------------------------------------------*/
 
@@ -58,57 +41,20 @@ jQuery(document).ready(function ($) {
         });
         wow.init();
 
-
-    /* ---------------------------------------------------------------------
-     Carousel
-     ---------------------------------------------------------------------= */
-
-    $('.slider').owlCarousel({
-        responsiveClass: true,
-        autoplay: false,
-        items: 1,
-        loop: true,
-       dots: true,
-	   nav:false,
-	   navText: [
-                    "<i class='lnr lnr-chevron-left'></i>",
-                    "<i class='lnr lnr-chevron-right'></i>"
-                ],
-      autoplayHoverPause: true
-
-    });
-
-    
-
-	
-	$('.chart').easyPieChart({
-		animate: 2000,
-            scaleColor: false,
-            lineWidth: 10,
-            lineCap: 'square',
-            size: 130,
-            trackColor: false,
-            barColor: '#498af3',
-            onStep: function (from, to, percent) {
-                $(this.el).find('.percent').text(Math.round(percent));
-            }
-	});
-	
-
 // main-menu-scroll
 
 	jQuery(window).scroll(function () {
 	  var top = jQuery(document).scrollTop();
-		var height = 300;
+		var height = 20;
 	  //alert(batas);
-	  
+
 	  if (top > height) {
 		jQuery('.navbar-fixed-top').addClass('menu-scroll');
 	  } else {
 	   jQuery('.navbar-fixed-top').removeClass('menu-scroll');
 	  }
-	});	 
-	
+	});
+
 // scroll Up
 
     $(window).scroll(function(){
@@ -121,7 +67,34 @@ jQuery(document).ready(function ($) {
     $('.scrollup').click(function(){
         $("html, body").animate({ scrollTop: 0 }, 1000);
         return false;
-    });	
+    });
 
     //End
 });
+// cookieConsent
+$(document).ready(function(){
+    setTimeout(function () {
+        $("#cookieConsent").fadeIn(200);
+     }, 4000);
+    $("#closeCookieConsent, .cookieConsentOK").click(function() {
+        $("#cookieConsent").fadeOut(200);
+    });
+});
+
+function toggleDocs(event) {
+
+    if (event.target && event.target.className == 'clickable') {
+
+        var next = event.target.nextElementSibling;
+
+
+        if (next.style.display == "none") {
+            next.style.display = "block";
+
+        } else {
+            next.style.display = "none";
+        }
+    }
+}
+
+document.addEventListener('click', toggleDocs, true);
