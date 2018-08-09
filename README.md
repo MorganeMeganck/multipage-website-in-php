@@ -11,3 +11,11 @@ A partir d'un site existant, le repenser, avec une approche plus estétique et �
 <br/>Il ne doit y avoir aucune repétion, les éléments  redondants doivent être sujet à l'inclusion (_include_).
 <br/>Y intégrer un formulaire fonctionel, dirigé vers notre propre boîte de messagerie (_gmail_).
 <br/>Le formulaire doit être sanitiser et le site hébergé sur **000webhost**, ainsi que déployé sur **Heroku**. 
+
+**Technos utilisées.**
+<br/>Html, css, Js, php
+<br/>**Frameworks et template.**
+<br/>Bootstrap, pink donuts template de xs@mail.com.
+<br/>**Hébergement.**
+<br/>000webhost, Heroku.
+
