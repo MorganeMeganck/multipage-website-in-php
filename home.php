@@ -1,79 +1,11 @@
-<!doctype html>
 <!-- [if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]--> -->
-<!--[if gt IE 8]><!
-    <html class="no-js" lang=""> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Intergenerations</title>
-        <meta name="description" content="site intergenerations">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/fonticons.css">
-        <link rel="stylesheet" href="assets/fonts/stylesheet.css">
-        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <!--For Plugins external css-->
-        <link rel="stylesheet" href="assets/css/plugins.css" />
-        <!--Theme custom css -->
-        <link rel="stylesheet" href="assets/css/style.css">
-        <!--Theme Responsive css-->
-        <link rel="stylesheet" href="assets/css/responsive.css" />
-        <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <!--Home page style-->
-        <header id="main_menu" class="header">
-            <div class="main_menu_bg navbar-fixed-top">
-                <div class="container">
-                    <div class="row">
-                        <div class="nave_menu">
-                            <nav class="navbar navbar-default">
-                                <div class="container-fluid">
-                                    <!-- Brand and toggle get grouped for better mobile display -->
-                                    <div class="navbar-header">
-                                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                                            <span class="sr-only">Toggle navigation</span>
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
-                                        </button>
-                                    </div>
-                                    <!-- Collect the nav links, forms, and other content for toggling -->
-                                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                                        <ul class="nav navbar-nav">
-                                            <li><a href="home.html" name="home">Accueil</a></li>
-                                            <li><a href="agenda.html" name="agenda">Agenda</a></li>
-                                            <li><a href="formulaire.php" name="contact">Contact</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header> <!--End of header -->
-        <section id="home" class="home">
-            <div class="home_overlay">
-                <div class="container" >
-                    <div class="row" id="headtitles">
-                        <h1 class="title col-md-12 col-sm-12 col-xs-12"><span class="titlehighlight">Inter</span>generations</h1>
-                        <h4 class="courants">Geré par</h2>
-                    </div>
-                </div>
-            </div>
-        </section><!-- End of Banner Section -->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<!DOCTYPE html>
+<html lang="fr">
+
+    <?php include 'partials/header.php' ?>
         <section id="contenuprincipal" class="contenuprincipal">
             <div class="container">
                 <div class="row">
@@ -90,7 +22,7 @@
                 </div>
                 <hr />
                 <div class="row">
-                    <div class="col-md-8 col-sm-6 col-xs-12">
+                    <div class="col-md-8 col-sm-12 col-xs-12">
                             <h3>Ses objectifs</h3>
                             <p>
                                 centraliser l’information intergénérationnelle
@@ -102,7 +34,7 @@
                                 <h3>infos</h3>
                                 <div id="demo" class="carousel slide" data-ride="carousel">
                                   <!-- Indicators -->
-                                  <ul class="carousel-indicators">
+                                  <ul id="dots" class="carousel-indicators">
                                     <li data-target="#demo" data-slide-to="0" class="active"></li>
                                     <li data-target="#demo" data-slide-to="1"></li>
                                     <li data-target="#demo" data-slide-to="2"></li>
@@ -138,17 +70,17 @@
                                   </div>
                                   <!-- Left and right controls -->
                                   <div class="carousel-arrow">
-                                      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                                      <a class="carousel-control-prev" aria-label="carouselpreviouss" href="#demo" data-slide="prev">
                                         <span class="carousel-control-prev-icon"></span>
                                       </a>
-                                      <a class="carousel-control-next" href="#demo" data-slide="next">
+                                      <a class="carousel-control-next" aria-label="carouselnextt" href="#demo" data-slide="next">
                                         <span class="carousel-control-next-icon"></span>
                                       </a>
                                   </div>
                                 </div>
                             </div>
                         </div>
-                        <div id="sidebar" class="col-md-4 col-sm-6 col-xs-12">
+                        <div id="sidebar" class="col-md-4 col-sm-12 col-xs-12">
                             <section>
                                 <div class="agenda">
                                     <h3>Agenda</h3>
@@ -158,7 +90,7 @@
                                     Participez à des ateliers mensuels entre seniors et jeunes et (re)découvrez la richesse des échanges entre générations.
                                     </br>Activités créatives, ateliers beauté, sorties diverses,...
                                     </p>
-                                    <button id="myButton">Voir plus</button>
+                                    <button class="myButton">Voir plus</button>
                                 </div>
                             </section>
                             <section>
@@ -167,12 +99,14 @@
                                     <p>
                                     Devenez membre d'intergénérations.be en quelques clics !
                                     </p>
+                                    <button class="myButton" id="myButtonagenda">Inscription</button>
                                 </div>
                             </section>
                             <section>
                                 <div class="recherche">
-                                    <h3>recherche</h3>
-                                    <input />
+                                    <!-- <h3>recherche</h3> -->
+                                    <label for="recherche">Recherche</label>
+                                    <input id="recherchesite" aria-label="recherche" placeholder=""="tapez ici votre recherche"/>
                                 </div>
                             </section>
                         </div>
@@ -184,58 +118,14 @@
                     <div class="col-md-12 col-sm-12 col-xs-12 clearfix">
                         <h3>Abonnez-vous pour recevoir notre Newsletter</h3>
                         <form id="register-newsletter">
-                            <input type="text" name="newsletter" required="" placeholder="Entrer votre addresse email">
+                            <label for="newsletter"></label>
+                            <input id="newsletterinput" type="text" name="newsletter" aria-label="newsletterinput" required="" placeholder="Entrer votre addresse email">
                                 <input type="submit" class="btn btn-custom-3" value="S'abonner">
                         </form>
                     </div>
                 </div>
             </div
         </div>
-        <!--  Footer-->
-        <div class="row">
-          <div class="footer_copyright">
-            <div id="cookieConsent">
-                <div id="closeCookieConsent">x</div>
-                This website is using cookies. <a href="#" target="_blank" name="cookie">More info</a>. <a class="cookieConsentOK">That's Fine</a>
-            </div>
-            <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInDown"  data-wow-duration="3s">
-              <div class="single_copyirgth text-left">
-                <p>Copyright 2016 &copy;  by Morgane Meganck, Ajay. Based from the pink donut template from XS@mail.com</p>
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-6 col-xs-12">
-              <div class="single_copyirgth wow fadeInUp"  data-wow-duration="2s">
-                <ul class="navbar-right">
-                  <li class="active"><a href="home.html" name="home">Accueil</a></li>
-                  <li><a href="agenda.html" name="aagenda">Agenda</a></li>
-                  <li><a href="formulaire.php" name="contact">Contact</a></li>
-                </ul>
-              </div>
-             </div>
-            </div>
-        </div>
-    </div>
-        <!-- STRAT SCROLL TO TOP -->
-        <div class="scrollup">
-            <a href="#"><i class="fa fa-chevron-up"></i></a>
-        </div>
-        <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
-        <script src="assets/js/vendor/bootstrap.min.js"></script>
-        <script src="assets/js/vendor/isotope.min.js"></script>
-        <script src="assets/js/jquery.mixitup.min.js"></script>
-        <script src="assets/js/plugins.js"></script>
-        <script src="assets/js/main.js"></script>
-        <script type="text/javascript">
-            document.getElementById("myButton").onclick = function () {
-                location.href = "agenda.html";
-            };
-        </script>
-        <script src="/upup.min.js"></script>
-  <script>
-    UpUp.start({
-      'content-url': 'home.html',
-      'assets': ['css/bootstrap.min.css', 'css/style.css']
-    });
-  </script>
+    <?php include 'partials/footer.php' ?>
     </body>
 </html>

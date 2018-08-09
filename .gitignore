@@ -3,3 +3,6 @@ gmail-id-password.php
 
 #ignore folder named `vendor`
 /vendor/
+
+#ignore folder named `downloadimg`
+/downloadimg/

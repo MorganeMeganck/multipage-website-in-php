@@ -52,19 +52,19 @@ $prenom = $_POST['prenom'];
 $nom = $_POST['nom'];
 $message = $_POST['message'];
 
-$options = array(
-    $prenom => FILTER_SANITIZE_STRING, //Enlever les balises.
-    $nom => FILTER_SANITIZE_STRING,
-    $message => FILTER_SANITIZE_STRING,
-    $email => FILTER_SANITIZE_EMAIL, //Valider l'adresse de messagerie.
-    );
-    if (true === filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    echo "Cette adresse email nettoyée est considérée comme valide.";
-} else {
-	echo "Cette adresse email nettoyée n'est pas valide. Désolé. xoxo";
-}
- $resultat = filter_input_array(INPUT_POST, $options);
-print_r($resultat);
+// $options = array(
+//     $prenom => FILTER_SANITIZE_STRING, //Enlever les balises.
+//     $nom => FILTER_SANITIZE_STRING,
+//     $message => FILTER_SANITIZE_STRING,
+//     $email => FILTER_SANITIZE_EMAIL, //Valider l'adresse de messagerie.
+//     );
+//     if (true === filter_var($email, FILTER_VALIDATE_EMAIL)) {
+//     echo "Cette adresse email nettoyée est considérée comme valide.";
+// } else {
+// 	echo "Cette adresse email nettoyée n'est pas valide. Désolé. xoxo";
+// }
+//  $resultat = filter_input_array(INPUT_POST, $options);
+// print_r($resultat);
 
 // mailer
 
@@ -97,17 +97,17 @@ $mail->Username = GMAIL_ID;
 //Password to use for SMTP authentication
 $mail->Password = GMAIL_PW;
 //Set who the message is to be sent from
-$mail->setFrom('morgane.meganck@gmail.com', 'Morgane Meganck');
+$mail->setFrom($email);
 //Set an alternative reply-to address
 $mail->addReplyTo('morgane.meganck@gmail.com', 'Morgane Meganck');
 //Set who the message is to be sent to
-$mail->addAddress($email);
+$mail->addAddress('morgane.meganck@gmail.com', 'Morgane Meganck');
 //Set the subject line
 $mail->AddCC($email);
 $mail->Subject = $objet;
 //Read an HTML message body from an external file, convert referenced images to embedded,
 //convert HTML into a basic plain-text alternative body
-$mail->msgHTML("Reçu de " . $genre ." " . $nom ." " . $prenom . "</br>" . " Date: ". $date . "</br>" . " Email: " . $email . "</br>" . " Format de réponse desiré: " . $format . "</br> Message: " . $message . $handle);
+$mail->msgHTML("Reçu de " . $genre ." " . $nom ." " . $prenom . "</br>" . " Date: ". $date . "</br>" . " Email: " . $email . "</br>" . " Format de réponse desiré: " . $format . "</br> Message: " . $message );
 //Replace the plain text body with one created manually
 $mail->AltBody = 'This is a plain-text message body';
 //Attach an image file
