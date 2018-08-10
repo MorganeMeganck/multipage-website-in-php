@@ -25,22 +25,7 @@ $genre = $_POST['genre'];
 $format = $_POST['format'];
 $date = date("l jS \of F Y h:i:s A");
 
-// documentenvoyé
-include('vendor/verot/class.upload.php/src/class.upload.php');
-$handle = new upload($_FILES['imagesend']);
-if ($handle->uploaded) {
-  $handle->file_new_name_body   = 'image_resized';
-  // $handle->image_resize         = true;
-  // $handle->image_x              = 100;
-  // $handle->image_ratio_y        = true;
-  $handle->process('downloadimg/');
-  if ($handle->processed) {
-    echo 'image_resized';
-    $handle->clean();
-  } else {
-    echo 'error : ' . $handle->error;
-  }
-}
+
 // genre
 $genre = $_POST['genre'];
 if(filter_has_var(INPUT_GET, $genre)) {
@@ -52,19 +37,15 @@ $prenom = $_POST['prenom'];
 $nom = $_POST['nom'];
 $message = $_POST['message'];
 
-// $options = array(
-//     $prenom => FILTER_SANITIZE_STRING, //Enlever les balises.
-//     $nom => FILTER_SANITIZE_STRING,
-//     $message => FILTER_SANITIZE_STRING,
-//     $email => FILTER_SANITIZE_EMAIL, //Valider l'adresse de messagerie.
-//     );
-//     if (true === filter_var($email, FILTER_VALIDATE_EMAIL)) {
-//     echo "Cette adresse email nettoyée est considérée comme valide.";
-// } else {
-// 	echo "Cette adresse email nettoyée n'est pas valide. Désolé. xoxo";
-// }
-//  $resultat = filter_input_array(INPUT_POST, $options);
-// print_r($resultat);
+$options = array(
+    $prenom => FILTER_SANITIZE_STRING, //Enlever les balises.
+    $nom => FILTER_SANITIZE_STRING,
+    $message => FILTER_SANITIZE_STRING,
+    $email => FILTER_SANITIZE_EMAIL, //Valider l'adresse de messagerie.
+    );
+    
+ $resultat = filter_input_array(INPUT_POST, $options);
+print_r($resultat);
 
 // mailer
 
@@ -103,6 +84,23 @@ $mail->addReplyTo('morgane.meganck@gmail.com', 'Morgane Meganck');
 //Set who the message is to be sent to
 $mail->addAddress('morgane.meganck@gmail.com', 'Morgane Meganck');
 //Set the subject line
+// documentenvoyé
+include('vendor/verot/class.upload.php/src/class.upload.php');
+$handle = new upload($_FILES['imagesend']);
+if ($handle->uploaded) {
+  $handle->file_new_name_body   = 'image_resized';
+  // $handle->image_resize         = true;
+  // $handle->image_x              = 100;
+  // $handle->image_ratio_y        = true;
+  $handle->process('downloadimg/');
+  if ($handle->processed) {
+    echo 'image_resized';
+    $mail->addAttachment($handle->file_dst_pathname);
+    $handle->clean();
+  } else {
+    echo 'error : ' . $handle->error;
+  }
+}
 $mail->AddCC($email);
 $mail->Subject = $objet;
 //Read an HTML message body from an external file, convert referenced images to embedded,

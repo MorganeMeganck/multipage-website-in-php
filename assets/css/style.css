@@ -760,17 +760,16 @@ padding: 50px;
 
 @media (max-width: 320px) {
 
-
     html {
         font-size: 60.5%;
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 700px) {
   .title{
     color: grey;
     font-family: 'Poiret One', cursive;
-    font-size: 3em;
+    font-size: 2em;
   }
   .courants{
     display: none;
@@ -797,9 +796,12 @@ padding: 50px;
     font-size: 30px;
   }
   }
-  @media screen and (max-width: 1000px) {
+  @media screen and (min-width: 700px) and (max-width: 1000px) {
     .contenuprincipal .head_title h2{
       font-size: 30px;
+    }
+    .title{
+      font-size: 3em;
     }
   }
 

@@ -13,7 +13,7 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": "offline.html",
+  "start_url": "www.facebook.com",
   "background_color": "rgb(219, 219, 219)",
   "display": "standalone",
   "scope": "/app/",

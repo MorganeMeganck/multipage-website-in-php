@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
-  <<?php include 'partials/header.php' ?>
+  <?php include 'partials/header.php' ?>
           <section id="contenuprincipal" class="contenuprincipal">
             <section id="contact" class="contact">
               <div class="container" >
