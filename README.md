@@ -19,3 +19,6 @@ A partir d'un site existant, le repenser, avec une approche plus estétique et �
 <br/>**Hébergement.**
 <br/>000webhost, Heroku.
 
+![alt text](https://raw.githubusercontent.com/ajaykian/multipage-website-in-php/master/assets/images/lighthouse.png)
+![alt text](https://raw.githubusercontent.com/ajaykian/multipage-website-in-php/master/assets/images/kanban.png)
+![alt text](https://raw.githubusercontent.com/ajaykian/multipage-website-in-php/master/assets/images/siteweb.png)
