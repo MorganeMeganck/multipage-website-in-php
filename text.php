@@ -21,4 +21,5 @@ fclose($monfichier);
 
 <?php fputs($monfichier, 'Texte à écrire'); 
 fseek($monfichier, 0);
+
 ?>

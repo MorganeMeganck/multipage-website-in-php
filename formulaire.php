@@ -1,8 +1,8 @@
 <?php
 print_r($_POST);
 // define variables and set to empty values
-$name_error = $email_error = $phone_error = $url_error = "";
-$name = $email = $phone = $message = $url = $success = "";
+$name_error = $email_error = "";
+$name = $email = $message = $success = "";
 
 //form is submitted with POST method
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
