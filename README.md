@@ -11,6 +11,7 @@ A partir d'un site existant, le repenser, avec une approche plus estétique et �
 <br/>Il ne doit y avoir aucune repétion, les éléments  redondants doivent être sujet à l'inclusion (_include_).
 <br/>Y intégrer un formulaire fonctionel, dirigé vers notre propre boîte de messagerie (_gmail_).
 <br/>Le formulaire doit être sanitiser et le site hébergé sur **000webhost**, ainsi que déployé sur **Heroku**. 
+![Lien des consignes](https://github.com/becodeorg/Johnson2/tree/master/projets/multipage-website-in-php)
 
 **Technos utilisées.**
 <br/>Html, css, Js, php
@@ -21,4 +22,5 @@ A partir d'un site existant, le repenser, avec une approche plus estétique et �
 
 ![lighthouse](./assets/images/lighthouse.png)
 ![kanban](/assets/images/kanban.png)
-![siteweb](/assets/images/siteweb.png)
+![siteweb](/assets/images/siteinter.png)
+![zoom site](/assets/images/zoomsite.png)
