@@ -19,6 +19,6 @@ A partir d'un site existant, le repenser, avec une approche plus estétique et �
 <br/>**Hébergement.**
 <br/>000webhost, Heroku.
 
-/assets/images/lighthouse.png
-/assets/images/kanban.png
-/assets/images/siteweb.png
+![lighthouse](./assets/images/lighthouse.png)
+![kanban](/assets/images/kanban.png)
+![siteweb](/assets/images/siteweb.png)
