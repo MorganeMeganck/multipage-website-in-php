@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# multipage-website-in-php
-=======
 Projet  website multipages en php.
 ==================================
 Projet soumis à un binome provenant de 2 formations différentes de _becode_.
@@ -22,4 +19,3 @@ A partir d'un site existant, le repenser, avec une approche plus estétique et �
 <br/>**Hébergement.**
 <br/>000webhost, Heroku.
 
->>>>>>> 406f0d7cb175a92f7c2c67aee27a89bd97dd4718
